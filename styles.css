@@ -26,6 +26,7 @@ input[type="text"] {
 	margin-top: 3vh;
 	letter-spacing: 1px;
 	outline: none;
+	text-align: center;
 }
 
 button {
@@ -36,6 +37,10 @@ button {
 	border: none;
 	color: #242424;
 	outline: none;
+	transition: all 0.3s ease 0s;
+}
+button:hover {
+	background-color: #bfdce3;
 }
 
 textarea {
@@ -49,4 +54,22 @@ textarea {
 	box-shadow: none;
 	outline: none;
 	resize: none;
+}
+
+@media (max-width: 850px) {
+	#morse-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	textarea,
+	input[type="text"] {
+		width: 90%;
+	}
+	button {
+		margin-top: 5px;
+		width: 91%;
+	}
 }
